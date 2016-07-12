@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class="formHolder">
+        <div class="titleWrap">
+            EMI You Can Afford <span>(Per Month)</span>
+        </div>
+        <div ng-controller="GetValues">
+            <form name="emiCalculator">
+                <div class="formControl">
+                    <label>Total Amount</label>
+                    <input type="number" placeholder="Enter your preferred amount" name="amount" ng-model="amount" min="10000" required />
+                    <span class="error" ng-show="emiCalculator.amount.$error.required">Required!</span>
+                    <span class="error" ng-show="emiCalculator.amount.$error.min">Minimum amount should be 10000.</span>
+                    <span class="error" ng-show="emiCalculator.amount.$error.number">Only Number</span>
+                </div>
+
+                <div class="formControl">
+                    <label>Tenure</label>
+                    <input type="number" name="tenure" placeholder="Enter your estimated tenure" ng-model="tenure" required min-Max />
+                    <span class="error" ng-show="emiCalculator.tenure.$error.required">Required!</span>
+                    <span class="error" ng-show="emiCalculator.tenure.$error.number">Only Number</span>
+                    <span class="error" ng-show="emiCalculator.tenure.$error.minmax">Must be 3-20 years</span>
+
+                </div>
+
+                <div class="formControl">
+                    <button type="submit" ng-click="formSubmit(amount,tenure)">CALCULATE</button>
+                </div>
+            </form>
+
+        </div>
+
+
+        <p class="note">Note: This EMI home search option is defined by the following assumptions : Loan Amount = 80% of the Property Cost, Interest Rate = 9.9% p.a. of the Loan Amount.</p>
+    </div>
+</div>

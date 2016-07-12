@@ -1,0 +1,108 @@
+    .wrapper {
+        display: block;
+        margin: 30px auto 0;
+        width: 301px;
+        height: 508px;
+        background: url(../img/bg1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 150px 30px 50px 30px;
+        box-sizing: border-box;
+    }
+    .wrapper2 {
+        display: block;
+        margin: 30px auto 0;
+        width: 301px;
+        height: 508px;
+        background: url(../img/bg2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 150px 30px 50px 30px;
+        box-sizing: border-box;
+    }
+    .titleWrap {
+        font-size: 12px;
+        color: #4c4d4f;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        position: relative;
+        padding: 14px 10px 5px;
+    }
+    .titleWrap span {
+        font-size: 10px;
+    }
+    .formControl {
+        padding: 14px 10px 5px;
+        font-size: 12px;
+        color: #4c4d4f;
+        display: block;
+        clear: both;
+        widows: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        position: relative;
+    }
+    .formControl label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .formControl input {
+        height: 30px;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .formControl button {
+        border: 1px solid #2f0dc1;
+        color: #2f0dc1;
+        background: transparent;
+        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+        outline: none;
+        cursor: pointer;
+    }
+    .note {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #4c4d4f;
+        padding: 5px 10px 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .outputWrapper {
+        padding: 65px 10px;
+    }
+    .headTitle {
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        color: #4c4d4f;
+    }
+    .headTitle span {
+        font-size: 10px;
+    }
+    .rupeeIcon {
+        width: 17px;
+        display: inline-block;
+    }
+    .rupeeIcon img {
+        display: block;
+        width: 100%;
+    }
+    .val {
+        font-size: 35px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 5px;
+        font-weight: 700;
+    }
+    .error {
+        position: absolute;
+        font-size: 11px;
+        left: 10px;
+        color: red;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
